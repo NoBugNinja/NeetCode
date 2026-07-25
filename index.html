@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeetCode 150 Tracker</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-background"></div>
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="ph-fill ph-code-block text-primary logo-icon"></i>
+                <div>
+                    <h1>NeetCode 150</h1>
+                    <p class="subtitle">Progress Tracker</p>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <div class="progress-header">
+                    <span>Overall Progress</span>
+                    <span id="overall-progress-text" class="text-primary font-bold">0 / 150</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div id="overall-progress-bar" class="progress-bar-fill"></div>
+                </div>
+            </div>
+
+            <nav class="topic-list" id="topic-list">
+                <!-- Topics will be dynamically injected here -->
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h2 id="current-topic-title">Select a Topic</h2>
+                <div class="topic-stats" id="topic-stats"></div>
+            </header>
+
+            <div class="problems-grid" id="problems-grid">
+                <!-- Problems will be dynamically injected here -->
+                <div class="empty-state">
+                    <i class="ph ph-list-dashes"></i>
+                    <p>Select a topic from the sidebar to view problems.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
