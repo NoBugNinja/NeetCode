@@ -85,12 +85,25 @@ body {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    margin-bottom: 4px;
 }
 
-.sidebar-header .subtitle {
-    font-size: 13px;
+.roadmap-selector {
+    background: var(--card);
     color: var(--text-muted);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 4px 8px;
+    font-size: 13px;
     font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    transition: var(--transition);
+}
+
+.roadmap-selector:hover, .roadmap-selector:focus {
+    border-color: var(--primary);
+    color: var(--text-main);
 }
 
 .progress-section {
